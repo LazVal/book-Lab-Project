@@ -75,3 +75,17 @@
 **Local launch**
 ```bash  
 gradle clean test
+
+----
+<a id="allure"></a>
+## Allure report ([link](https://jenkins.qa.guru/job/BookLabProjectLazVal/4/allure/))
+
+**Allure report overview**
+<p align="center">  
+<a href="https://jenkins.qa.guru/job/BookLabProjectLazVal/4/allure/"><img src="image/Allure Result.png" alt="Allure Report overview" width="950"/></a>  
+</p>
+
+**Suites – test cases**
+<p align="center">  
+<a href="https://jenkins.qa.guru/job/BookLabProjectLazVal/4/allure/"><img src="image/Suites.png" alt="Allure Suites" width="950"/></a>  
+</p>
