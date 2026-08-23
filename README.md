@@ -75,7 +75,7 @@
 **Local launch**
 ```bash  
 gradle clean test
-
+```
 ----
 <a id="allure"></a>
 ## Allure report ([link](https://jenkins.qa.guru/job/BookLabProjectLazVal/4/allure/))
@@ -88,4 +88,11 @@ gradle clean test
 **Suites – test cases**
 <p align="center">  
 <a href="https://jenkins.qa.guru/job/BookLabProjectLazVal/4/allure/"><img src="image/Suites.png" alt="Allure Suites" width="950"/></a>  
+</p>
+
+----
+<a id="telegram"></a>
+## Telegram notification with bot
+<p align="center">  
+<img src="images/screen/tg_bot_report.png" width="350"/> 
 </p>
