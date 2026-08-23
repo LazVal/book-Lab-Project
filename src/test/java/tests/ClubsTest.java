@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import models.club.*;
@@ -12,8 +14,10 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static tests.TestData.*;
 
-@DisplayName("Клуб тесты")
+@Epic("API тесты")
+@Feature("Клубы")
 @Story("Создание, изменение, удаление клуба")
+@DisplayName("Тесты клубов")
 public class ClubsTest extends BaseTest {
     private static String accessToken;
 

@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import models.login.*;
 import org.junit.jupiter.api.DisplayName;
@@ -9,8 +11,10 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static tests.TestData.*;
 
-@DisplayName("Авторизация")
+@Epic("API тесты")
+@Feature("Авторизация")
 @Story("Авторизация/ошибки авторизации")
+@DisplayName("Авторизация")
 public class LoginTest extends BaseTest {
 
     @Test

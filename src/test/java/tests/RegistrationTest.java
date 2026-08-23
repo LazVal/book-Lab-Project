@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import models.registration.lombok.RegistrationBodyLombokModel;
 import models.registration.lombok.RegistrationResponseLombokModel;
@@ -15,8 +17,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static tests.TestData.NOT_BE_BLANK_ERROR;
 import static tests.TestData.USER_ALREADY_EXIST_ERROR;
-@DisplayName("Регистрация")
+@Epic("API тесты")
+@Feature("Регистрация")
 @Story("Регистрация/ошибки регистрации")
+@DisplayName("Регистрация")
 public class RegistrationTest extends BaseTest {
 
     String USERNAME;

@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import models.login.LoginBodyModel;
@@ -12,8 +14,10 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static tests.TestData.*;
 
-@DisplayName("Выход пользователя")
+@Epic("API тесты")
+@Feature("Выход")
 @Story("Выход из системы")
+@DisplayName("Выход пользователя")
 public class LogoutTest extends BaseTest {
 
     @Test

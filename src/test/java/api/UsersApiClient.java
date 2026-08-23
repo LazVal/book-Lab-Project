@@ -28,8 +28,8 @@ public class UsersApiClient {
                 .post("/users/register/")
                 .then()
                 .spec(successRegistrationResponseSpec)
-                .extract()// переключаемся на извлечение
-                .as(RegistrationResponseLombokModel.class);// десериализуем в модель
+                .extract()
+                .as(RegistrationResponseLombokModel.class);
     }
 
     @Step("Отправка запроса Registration")

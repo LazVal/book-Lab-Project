@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import models.user.GetUserResponseBodyModel;
@@ -16,8 +18,10 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static tests.TestData.*;
 
-@DisplayName("Пользователь")
+@Epic("API тесты")
+@Feature("Пользователь")
 @Story("Авторизация, обновление, детальная информация о пользователе")
+@DisplayName("Регистрация")
 public class UserTest extends BaseTest {
     private static String accessToken;
     String FIRSTNAME;
