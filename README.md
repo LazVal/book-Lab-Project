@@ -66,8 +66,6 @@
 <a href="https://jenkins.qa.guru/job/BookLabProjectLazVal/"><img src="image/Jenkins.png" alt="Jenkins build" width="950"/></a>  
 </p>
 
-> No build parameters are required.
-
 ----
 <a id="console"></a>
 ## Run from Terminal
