@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Story;
 import models.registration.lombok.RegistrationBodyLombokModel;
 import models.registration.lombok.RegistrationResponseLombokModel;
 import models.registration.lombok.WrongRegistrationResponseLombokModel;
@@ -10,17 +11,12 @@ import net.datafaker.Faker;
 import org.junit.jupiter.api.*;
 
 import static io.qameta.allure.Allure.step;
-import static io.restassured.RestAssured.given;
-import static io.restassured.http.ContentType.JSON;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static specs.registration.RegistrationSpec.*;
 import static tests.TestData.NOT_BE_BLANK_ERROR;
 import static tests.TestData.USER_ALREADY_EXIST_ERROR;
-
+@DisplayName("Регистрация")
+@Story("Регистрация/ошибки регистрации")
 public class RegistrationTest extends BaseTest {
 
     String USERNAME;
@@ -40,7 +36,6 @@ public class RegistrationTest extends BaseTest {
         data.setUsername(USERNAME);
         data.setPassword(PASSWORD);
 
-        //RegistrationBodyLombokModel data = new RegistrationBodyLombokModel(USERNAME, PASSWORD);
         RegistrationResponseLombokModel registrationResponse = api.users.register(data);
 
         step("Проверка username", () -> {

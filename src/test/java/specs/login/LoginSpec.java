@@ -9,7 +9,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 import static org.hamcrest.Matchers.notNullValue;
 import static specs.BaseSpec.baseRequestSpec;
 
-public class LoginSpec { // часть повторяющегося кода выносится
+public class LoginSpec {
     public static RequestSpecification loginRequestSpec = baseRequestSpec;
 
     public static ResponseSpecification successResponseSpec = new ResponseSpecBuilder()

@@ -2,14 +2,10 @@ package api;
 
 
 import io.qameta.allure.Step;
-import models.login.LoginBodyModel;
 import models.logout.BadRequestLogoutBodyResponseModel;
 import models.logout.LogoutBodyModel;
 
-
 import static io.restassured.RestAssured.given;
-import static specs.login.LoginSpec.loginRequestSpec;
-import static specs.login.LoginSpec.successResponseSpec;
 import static specs.logout.LogoutSpec.*;
 
 

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.Instant;
 import java.util.List;
 
-public record CreateClubResponseBodyModel (
+public record CreateClubResponseBodyModel(
         int id,
         String bookTitle,
         String bookAuthors,
@@ -19,5 +19,5 @@ public record CreateClubResponseBodyModel (
         Instant created,
         @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'", timezone = "UTC")
         Instant modified
-){
+) {
 }

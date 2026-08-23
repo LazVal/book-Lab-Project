@@ -43,6 +43,7 @@ public class UsersApiClient {
                 .extract()
                 .as(RegistrationResponseRecordsModel.class);
     }
+
     @Step("Повторная отправка запроса Registration")
 
     public ExistingUserResponseRecordsModel registerExisting(RegistrationBodyRecordsModel body) {

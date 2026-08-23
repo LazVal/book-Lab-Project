@@ -1,13 +1,5 @@
 package api;
 
-import io.qameta.allure.Step;
-import io.restassured.response.Response;
-import models.login.LoginBodyModel;
-
-import static io.restassured.RestAssured.given;
-import static specs.login.LoginSpec.loginRequestSpec;
-import static specs.login.LoginSpec.successResponseSpec;
-
 /**
  * Общий API-клиент — единая точка доступа к клиентам эндпоинтов.
  */

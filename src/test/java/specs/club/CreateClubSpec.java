@@ -25,7 +25,6 @@ public class CreateClubSpec {
     public static ResponseSpecification successGetResponseClubSpec = new ResponseSpecBuilder()
             .log(ALL)
             .expectStatusCode(200)
-            //.expectBody(matchesJsonSchemaInClasspath("schemas/club/success_create_club_schema.json"))
             .expectBody("bookTitle", notNullValue())
             .expectBody("bookAuthors", notNullValue())
             .expectBody("publicationYear", notNullValue())
@@ -36,7 +35,6 @@ public class CreateClubSpec {
     public static ResponseSpecification successUpdateResponseClubSpec = new ResponseSpecBuilder()
             .log(ALL)
             .expectStatusCode(200)
-            //.expectBody(matchesJsonSchemaInClasspath("schemas/club/success_create_club_schema.json"))
             .expectBody("bookTitle", notNullValue())
             .expectBody("bookAuthors", notNullValue())
             .expectBody("publicationYear", notNullValue())
@@ -47,7 +45,6 @@ public class CreateClubSpec {
     public static ResponseSpecification successDeleteResponseClubSpec = new ResponseSpecBuilder()
             .log(ALL)
             .expectStatusCode(204)
-            //.expectBody(matchesJsonSchemaInClasspath("schemas/club/success_create_club_schema.json"))
             .build();
 }
 

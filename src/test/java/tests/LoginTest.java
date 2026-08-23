@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Story;
 import models.login.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,6 +9,8 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static tests.TestData.*;
 
+@DisplayName("Авторизация")
+@Story("Авторизация/ошибки авторизации")
 public class LoginTest extends BaseTest {
 
     @Test
@@ -64,7 +67,7 @@ public class LoginTest extends BaseTest {
     public void notAllowedLoginTest() {
 
         LoginBodyModel loginData = new LoginBodyModel(BLANK_USERNAME, BLANK_PASSWORD);
-                api.auth.loginNotAllowed(loginData);
+        api.auth.loginNotAllowed(loginData);
 
     }
 }

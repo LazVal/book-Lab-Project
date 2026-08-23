@@ -19,5 +19,5 @@ public record UpdateClubResponseBodyModel(
         Instant created,
         @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'", timezone = "UTC")
         Instant modified
-){
+) {
 }

@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import models.user.GetUserResponseBodyModel;
 import models.user.UnauthorizedGetUserResponseBodyModel;
@@ -15,6 +16,8 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static tests.TestData.*;
 
+@DisplayName("Пользователь")
+@Story("Авторизация, обновление, детальная информация о пользователе")
 public class UserTest extends BaseTest {
     private static String accessToken;
     String FIRSTNAME;

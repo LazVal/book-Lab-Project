@@ -1,0 +1,21 @@
+{
+  "base": {
+    "project": "allure-report",
+    "environment": "qa.quru",
+    "comment": "Nice bot",
+    "reportLink": "https://jenkins.qa.guru/job/BookLabProjectLazVal",
+    "language": "ru",
+    "allureFolder": "allure-report",
+    "enableChart": true,
+    "darkMode": true,
+    "enableSuitesPublishing": true,
+    "customData": {}
+  },
+  "telegram": {
+    "token": "8906955028:AAEos4cWVtV1pnkT7FfRNAyCavM6P80z4vY",
+    "chat": "-1003883709244",
+    "topic": "",
+    "replyTo": "",
+    "templatePath": "/templates/telegram.ftl"
+  }
+}

@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Story;
 import io.restassured.response.Response;
 import models.login.LoginBodyModel;
 import models.logout.BadRequestLogoutBodyResponseModel;
@@ -11,7 +12,8 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 import static tests.TestData.*;
 
-
+@DisplayName("Выход пользователя")
+@Story("Выход из системы")
 public class LogoutTest extends BaseTest {
 
     @Test

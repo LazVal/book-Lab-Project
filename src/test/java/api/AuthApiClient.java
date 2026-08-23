@@ -43,7 +43,8 @@ public class AuthApiClient {
                 .spec(invalidLoginResponseSpec)
                 .extract().as(InvalidLoginBodyResponseModel.class);
     }
-@Step("Отправка запроса, ошибка 405")
+
+    @Step("Отправка запроса, ошибка 405")
     public void loginNotAllowed(LoginBodyModel body) {
         given()
                 .body(body)
@@ -53,7 +54,7 @@ public class AuthApiClient {
                 .spec(notAllowedLoginResponseSpec);
     }
 
-    @Step ("Успешная авторизация и получение токена")
+    @Step("Успешная авторизация и получение токена")
     public Response register(LoginBodyModel body) {
         return given(loginRequestSpec)
                 .body(body)
