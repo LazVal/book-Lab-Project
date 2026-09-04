@@ -1,4 +1,7 @@
 # Test Automation Project for [BookLabProject](https://book-club.qa.guru/api/v1/docs/swagger/)
+<p align="center">  
+<a href="https://jenkins.qa.guru/job/BookLabProjectLazVal/"><img src="image/bookLab.png" alt="Jenkins build" width="950"/></a>  
+</p>
 
 ## **Contents:** ##
 * <a href="#tools">Technologies and tools</a>
